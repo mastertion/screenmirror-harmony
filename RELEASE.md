@@ -8,7 +8,7 @@
 1. 注册并实名认证 [华为开发者联盟](https://developer.huawei.com/consumer/cn/) 账号
    - 个人开发者或企业开发者均可；企业应用需企业资质。
 2. 在 AppGallery Connect 创建应用，获取：
-   - **Package name**：必须与 `AppScope/app.json5` 的 `bundleName` 一致（当前 `top.asahilee.app.spacedeskviewer`）。
+   - **Package name**：必须与 `AppScope/app.json5` 的 `bundleName` 一致（当前 `top.asahilee.app.screenmirror`）。
    - **发布证书（.cer）** + **签名密钥库（.p12）** + **Profile（.p7b）**。
      ⚠️ 不要用本工程 `_sign/` 下的调试证书——那是本地调试用的，市场发布必须用控制台签发的正式证书。
 
@@ -39,7 +39,13 @@
 
 ## 五、仍需注意的残留风险
 
-- **商标 / 克隆风险**：应用功能为对接 spacedesk 协议的主机客户端，包名仍含 `spacedeskviewer` 字样。
-  若华为审核判定为"克隆 / 冒用第三方品牌"，可能驳回。如追求稳妥，建议把包名与商店文案彻底去 spacedesk 化。
+- **包名 / 代码去品牌化（已完成）**：包名已改为 `top.asahilee.app.screenmirror`；原生模块 `libscreenmirror.so`、工程名 `screenmirror-harmony`、存储键 `screenmirror_settings` 等均已去除 spacedesk 字样；应用自身不再以 spacedesk 品牌自居（关于页与界面文案均为"独立互操作实现"）。
+- **商店曝光策略（用户决策）**：为让搜索 "spacedesk" 的用户能找到本应用，应用市场「应用名称 / 搜索关键词」中保留 spacedesk 字样（见下方上架文案草稿）。该做法存在被华为判定为"克隆 / 冒用第三方品牌"而驳回的风险，已由用户确认承担。
+- **上架文案草稿（AppGallery 控制台填写）**：
+  - 应用名称：`扩展屏助手（Spacedesk 兼容）` 或 `spacedesk 扩展屏助手 · ScreenMirror`
+  - 一句话简介：把鸿蒙手机变成 Windows 电脑的第二块扩展屏，兼容 spacedesk 投屏服务端的局域网协议。
+  - 搜索关键词：`spacedesk, 扩展屏, 双屏, 投屏, 无线显示器, screen mirroring`
+  - 隐私政策链接：将本仓库 `PRIVACY.md` 托管为 GitHub Pages 后填入控制台。
+- **协议常量保留说明**：`Protocol.ets` 中的 `DISCOVERY_MAGIC = 'SPACEDESK-NET-CLIENT\0'` 是服务端要求的握手探测载荷，属于公开协议常量，不可更改，否则无法连接；该字符串仅出现在私有代码与私有仓库文档中，不进入应用商店展示。
 - **后台保活**：`dataTransfer` 后台模式需确保确有持续数据传输场景，否则审核可能要求说明。
 - 截图、隐私政策托管链接、正式签名证书均需开发者本人在控制台完成。

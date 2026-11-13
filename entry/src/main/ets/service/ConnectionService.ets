@@ -25,7 +25,7 @@ import {
   PointerSample, PenSample, FrameMeta, AudioChunk
 } from '../common/ProtocolEx';
 import { audioService } from './AudioService';
-import { decodeJpeg, DecodedFrame } from 'libspacedesk.so';
+import { decodeJpeg, DecodedFrame } from 'libscreenmirror.so';
 
 export enum SessionState {
   IDLE = 0,

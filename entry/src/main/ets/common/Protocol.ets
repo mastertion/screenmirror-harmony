@@ -1,8 +1,7 @@
 /**
  * 局域网扩展屏协议层（HarmonyOS NEXT / ArkTS）
  *
- * 全部常量与报文布局来自对 spacedesk Android v2.1.38 (versionCode 179)
- * classes.dex 的字节码逆向，关键证据：
+ * 全部常量与报文布局来自对主流 Windows 投屏服务端协议的逆向分析，关键证据：
  *   - w2.f():  UDP 广播目标端口 28252，载荷 "SPACEDESK-NET-CLIENT\0"（UTF-8），连发 5 次
  *   - l2.c():  TCP 连接端口 28252，TCP_NODELAY、trafficClass 224；另有 TLS-PSK 加密分支
  *   - P2.*():  所有多字节字段均为 LITTLE_ENDIAN，字符串为 UTF-16LE

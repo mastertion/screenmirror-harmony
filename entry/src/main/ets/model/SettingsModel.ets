@@ -6,7 +6,7 @@ import { preferences } from '@kit.ArkData';
 import { common } from '@kit.AbilityKit';
 import { Compression } from '../common/Protocol';
 
-export const PREF_STORE: string = 'spacedesk_settings';
+export const PREF_STORE: string = 'screenmirror_settings';
 
 export class SettingsModel {
   private store: preferences.Preferences | undefined = undefined;

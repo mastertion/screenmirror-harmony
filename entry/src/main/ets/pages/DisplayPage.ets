@@ -17,7 +17,7 @@ import { s } from '../common/Res';
 import {
   init as h264Init, push as h264Push, poll as h264Poll,
   release as h264Release, DecodedFrame
-} from 'libspacedesk.so';
+} from 'libscreenmirror.so';
 
 // 半模态弹层状态机：同一节点只允许绑定一个 bindSheet，多个会互相冲突（后绑吞先绑）
 const SHEET_NONE: number = 0;
@@ -332,7 +332,7 @@ struct DisplayPage {
     this.lastPinch = 0;
 
     const t: TouchObject = list[0];
-    // 本地触摸反馈点（spacedesk 服务端不把光标渲染进视频流，需本地提示）
+    // 本地触摸反馈点（服务端不把光标渲染进视频流，需本地提示）
     this.dotX = t.x;
     this.dotY = t.y;
     this.dotShow = true;

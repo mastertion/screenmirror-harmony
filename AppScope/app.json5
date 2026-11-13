@@ -1,6 +1,6 @@
 {
   "app": {
-    "bundleName": "top.asahilee.app.spacedeskviewer",
+    "bundleName": "top.asahilee.app.screenmirror",
     "vendor": "asahilee",
     "versionCode": 100,
     "versionName": "1.0.0",

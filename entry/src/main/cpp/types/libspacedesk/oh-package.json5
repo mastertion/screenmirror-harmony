@@ -1,6 +1,0 @@
-{
-  "name": "libspacedesk.so",
-  "types": "./index.d.ts",
-  "version": "1.0.0",
-  "description": "spacedesk H.264 原生解码桥接模块"
-}

@@ -27,7 +27,7 @@
 
 /* stb_image：单头文件 JPEG/PNG 解码器（public domain）。
  * 用于 MJPEG 条带解码——2026-11-13 真机验证系统 image 框架对
- * spacedesk 服务端的标准 baseline JPEG 解码失败（Create PixelMap error），
+ * screenmirror 服务端的标准 baseline JPEG 解码失败（Create PixelMap error），
  * 原生 stb 解码不依赖系统编解码插件，保证可用。 */
 #define STB_IMAGE_IMPLEMENTATION
 #define STBI_ONLY_JPEG
@@ -36,7 +36,7 @@
 #undef LOG_DOMAIN
 #undef LOG_TAG
 #define LOG_DOMAIN 0x5D30
-#define LOG_TAG "SpacedeskH264"
+#define LOG_TAG "ScreenmirrorH264"
 
 namespace {
 
@@ -459,12 +459,12 @@ static napi_module g_module = {
     .nm_flags = 0,
     .nm_filename = nullptr,
     .nm_register_func = Register,
-    .nm_modname = "spacedesk",
+    .nm_modname = "screenmirror",
     .nm_priv = nullptr,
     .reserved = {0},
 };
 
-extern "C" __attribute__((constructor)) void RegisterSpacedeskModule(void)
+extern "C" __attribute__((constructor)) void RegisterScreenmirrorModule(void)
 {
     napi_module_register(&g_module);
 }
