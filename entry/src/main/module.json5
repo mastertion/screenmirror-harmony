@@ -19,6 +19,7 @@
         "startWindowBackground": "$color:start_window_background",
         "exported": true,
         "orientation": "auto_rotation",
+        "backgroundModes": ["dataTransfer"],
         "skills": [
           {
             "entities": ["entity.system.home"],
@@ -36,11 +37,6 @@
       {
         "name": "ohos.permission.GET_NETWORK_INFO",
         "reason": "$string:perm_network_reason",
-        "usedScene": { "abilities": ["EntryAbility"], "when": "inuse" }
-      },
-      {
-        "name": "ohos.permission.MICROPHONE",
-        "reason": "$string:perm_mic_reason",
         "usedScene": { "abilities": ["EntryAbility"], "when": "inuse" }
       },
       {
