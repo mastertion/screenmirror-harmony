@@ -1,0 +1,5 @@
+# 默认混淆规则（release 构建必需；当前混淆已关闭 enable=false）
+-enable-property-obfuscation
+-enable-toplevel-obfuscation
+-enable-filename-obfuscation
+-enable-export-obfuscation
