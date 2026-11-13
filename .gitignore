@@ -1,0 +1,29 @@
+# ===== HarmonyOS / hvigor 构建产物 =====
+.hvigor/
+build/
+**/build/
+**/default/
+**/outputs/
+**/*.hap
+**/*.app
+**/*.aab
+**/*.hprof
+
+# ===== 依赖 =====
+oh_modules/
+node_modules/
+
+# ===== 签名材料（含私钥，禁止入库） =====
+_sign/
+**/*.p12
+**/*.cer
+**/*.p7b
+**/*.jks
+**/sign/
+
+# ===== IDE / 系统 =====
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+local.properties

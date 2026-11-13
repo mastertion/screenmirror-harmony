@@ -1,0 +1,15 @@
+{
+  "modelVersion": "5.0.0",
+  "name": "spacedesk-harmony",
+  "version": "1.0.0",
+  "description": "HarmonyOS NEXT 原生局域网扩展屏客户端（全中文界面）",
+  "main": "",
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {},
+  "devDependencies": {
+    "@ohos/hypium": "1.0.21",
+    "@ohos/hvigor": "5.8.5",
+    "@ohos/hvigor-ohos-plugin": "5.8.5"
+  }
+}
