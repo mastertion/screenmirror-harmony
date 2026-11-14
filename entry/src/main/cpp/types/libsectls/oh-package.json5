@@ -1,0 +1,6 @@
+{
+  "name": "libsectls.so",
+  "types": "./index.d.ts",
+  "version": "1.0.0",
+  "description": "spacedesk TLS-PSK secure transport (OpenSSL)"
+}

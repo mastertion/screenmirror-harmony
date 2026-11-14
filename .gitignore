@@ -1,0 +1,49 @@
+# ===== 签名材料与本机配置（严禁入库）=====
+# 根目录 build-profile.json5 含本机证书路径与加密口令，仅保留在本地。
+# 公开仓库提供 build-profile.example.json5，clone 后复制并自行配置签名。
+/build-profile.json5
+/build-profile.local.json5
+*.bak
+_sign/
+signing/
+*.p12
+*.cer
+*.p7b
+*.pem
+*.csr
+*.keystore
+*.jks
+
+# ===== 构建产物 =====
+*.hap
+*.app
+*.hprof
+.hvigor/
+build/
+output/
+dist/
+oh_modules/
+node_modules/
+entry/.cxx/
+entry/.preview/
+vfy/
+*.log
+build_log.txt
+hilog_*.txt
+_h*.txt
+_sz.txt
+
+# ===== 本地协议分析文档（不对外发布）=====
+docs/
+
+# ===== 二进制素材 =====
+*.apk
+*.msi
+sicn_extract/
+
+# ===== IDE / 系统 =====
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db

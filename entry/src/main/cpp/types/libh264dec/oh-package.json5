@@ -1,0 +1,6 @@
+{
+  "name": "libh264dec.so",
+  "types": "./index.d.ts",
+  "version": "1.0.0",
+  "description": "spacedesk H.264 decoder bridge (OH_AVCodec)"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "entry",
+  "version": "1.0.0",
+  "description": "SHISON Heater entry module",
+  "main": "",
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "libh264dec.so": "file:./src/main/cpp/types/libh264dec",
+    "libsectls.so": "file:./src/main/cpp/types/libsectls"
+  }
+}

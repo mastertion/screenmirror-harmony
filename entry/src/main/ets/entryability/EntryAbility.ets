@@ -1,0 +1,41 @@
+import { AbilityConstant, UIAbility, Want } from '@kit.AbilityKit';
+import { hilog } from '@kit.PerformanceAnalysisKit';
+import { window } from '@kit.ArkUI';
+
+const TAG = 'SpacedeskHarmony';
+
+export default class EntryAbility extends UIAbility {
+  onCreate(want: Want, launchParam: AbilityConstant.LaunchParam): void {
+    hilog.info(0x0000, TAG, 'Ability onCreate');
+  }
+
+  onDestroy(): void {
+    hilog.info(0x0000, TAG, 'Ability onDestroy');
+  }
+
+  onWindowStageCreate(windowStage: window.WindowStage): void {
+    windowStage.loadContent('pages/Index', (err) => {
+      if (err.code) {
+        hilog.error(0x0000, TAG, 'Failed to load content: %{public}s', JSON.stringify(err));
+        return;
+      }
+      const mainWindow = windowStage.getMainWindowSync();
+      // 全屏沉浸，副屏画面才能铺满
+      mainWindow.setWindowLayoutFullScreen(true);
+      mainWindow.setWindowSystemBarEnable([]);
+      hilog.info(0x0000, TAG, 'Content loaded');
+    });
+  }
+
+  onWindowStageDestroy(): void {
+    hilog.info(0x0000, TAG, 'Ability onWindowStageDestroy');
+  }
+
+  onForeground(): void {
+    hilog.info(0x0000, TAG, 'Ability onForeground');
+  }
+
+  onBackground(): void {
+    hilog.info(0x0000, TAG, 'Ability onBackground');
+  }
+}

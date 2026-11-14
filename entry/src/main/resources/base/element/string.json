@@ -1,0 +1,24 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "局域网无线扩展屏客户端"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "局域网无线扩展屏客户端"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "扩展屏助手"
+    },
+    {
+      "name": "internet_reason",
+      "value": "用于发现局域网内的扩展屏服务端并传输屏幕画面"
+    },
+    {
+      "name": "network_info_reason",
+      "value": "读取网络状态，确保画面传输链路可用"
+    }
+  ]
+}
