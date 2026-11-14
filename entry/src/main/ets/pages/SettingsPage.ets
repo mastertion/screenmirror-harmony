@@ -317,7 +317,7 @@ struct SettingsPage {
           }
           .borderRadius(16)
           .clip(true)
-          Text('设备名称显示在 Windows 端 spacedesk 控制面板中')
+          Text('设备名称显示在 Windows 端扩展屏服务端的控制面板中')
             .fontSize(12)
             .fontColor($r('app.color.text_secondary'))
             .margin({ top: 8, left: 4 })
@@ -433,7 +433,7 @@ struct SettingsPage {
 
           this.SectionTitle('显示模式（复制 / 扩展）')
           Column() {
-            Text('本机作为副屏接入后，Windows 会新增一台虚拟显示器。使用「扩展」还是「复制」模式由电脑端决定：\n\n· 扩展屏幕（默认）：桌面延伸，手机显示独立内容\n· 复制屏幕：在电脑上按 Win + P 选择「复制」，或在 显示设置 中选中虚拟显示器后选「复制这些显示器」\n\n提示：若连接后电脑端显示已断开/黑屏，请在 spacedesk 驱动控制台点击「Clear Windows Display Settings」后重连。')
+            Text('本机作为副屏接入后，Windows 会新增一台虚拟显示器。使用「扩展」还是「复制」模式由电脑端决定：\n\n· 扩展屏幕（默认）：桌面延伸，手机显示独立内容\n· 复制屏幕：在电脑上按 Win + P 选择「复制」，或在 显示设置 中选中虚拟显示器后选「复制这些显示器」\n\n提示：若连接后电脑端显示已断开/黑屏，请在电脑端扩展屏服务控制台点击「Clear Windows Display Settings」后重连。')
               .fontSize(13)
               .fontColor($r('app.color.text_secondary'))
               .width('100%')

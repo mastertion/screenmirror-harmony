@@ -371,7 +371,7 @@ struct Index {
               Text('暂无服务器')
                 .fontSize(14)
                 .fontColor($r('app.color.text_secondary'))
-              Text('1. 在 Windows 上安装 spacedesk 驱动并确保已启动\n2. 两个设备连到同一局域网/热点\n3. 也可以直接在上方手动输入 IP')
+              Text('1. 在 Windows 上安装兼容的扩展屏服务端并启动\n2. 两个设备连到同一局域网/热点\n3. 也可以直接在上方手动输入 IP')
                 .fontSize(12)
                 .fontColor($r('app.color.text_hint'))
                 .margin({ top: 8 })

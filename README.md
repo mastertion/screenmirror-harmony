@@ -75,7 +75,7 @@ bash build_release.sh
 - `store/listing.md`：应用市场文案、隐私标签与后台填写清单
 - `store/上架合规检查.md`：逐项合规检查结论与阻断项
 - `store/icon-216.png` / `icon-1024.png`：方角应用图标
-- `store/screenshots/`：1080×1920 介绍截图
+- `store/screenshots/`：1080×1920 介绍截图（已生成 3 张真机截图，核心投屏画面截图待方向问题修复后补齐）
 
 应用市场提交需要在华为 AppGallery Connect 控制台由开发者本人完成实名、软著、发布证书申请与最终提审，详见 `store/上架合规检查.md`。
 
